@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Segítség</title>
+
+
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <script src="../jquery-3.7.1.js" type="text/javascript" ></script>
+    <script src="../js/showHeader.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+
+    <div id="nav-bar"></div>
+</head>
+
+<body onload="setBackgroundColor()">
+
+<h3>A rendszer működése</h3>
+
+
+<h5> Az alábbi funkciók érhetők el:</h5>
+
+<ul>
+    <li>Alapértelmezett háttérszín felüldefiniálása az aloldalakra vonatkozóan a <a href="/"> Kezdőlapon</a>.</li>
+    <li>Sorozat adatainak megjelenítése táblázatban. A lekérdezés során címre is lehet szűrni legördülő lista segítségével.</li>
+    <li>Film adatainak megjelenítése táblázatban. A lekérdezés során rendezőre is lehet szűrni legördülő lista segítségével.</li>
+    <li>Sorozat felvitele, ezen belül:</li>
+        <ul>
+            <li>cím</li>
+            <li>rendező</li>
+            <li>főszereplő</li>
+            <li>játékidő hossza (percben értendő)</li>
+            <li>megjelenés dátuma</li>
+            <li>rövid leírás</li>
+            <li>nyelvek, amelyeken elérhető</li>
+            <li>műfaj.</li>
+        </ul>
+    <li>Film felvitele, ennek keretében megadható:</li>
+    <ul>
+        <li>cím</li>
+        <li>rendező</li>
+        <li>főszereplő</li>
+        <li>évadok száma</li>
+        <li>rövid leírás</li>
+        <li>nyelvek, amelyeken elérhető.</li>
+    </ul>
+</ul>
+
+<h5>A rendszer működési sorrendje</h5>
+<ol>
+    <li>Először célszerű adatot felvinni (sorozatról vagy filmről). A form-ba már beírt, de el nem küldött adatokat <span style="color: red">egyetlen gombbal </span> ki lehet törölni (a form alaphelyzetbe állítható).</li>
+    <li>Amennyiben a felvitel során hiba történik (nem megfelelően kitöltött űrlap), úgy az adatfelvitel sikertelen. Erről a felhasználó animált ablakban értesül.</li>
+    <li>Sikeres adatfelvitel esetén a felvitt adat típusának (sorozat vagy film) megfelelő oldalra kerülünk, ahol meg lehet nézni a rendszerben lévő adatokat.</li>
+    <li>Ezt követően lehetőség van újabb adatokat felvinni.</li>
+</ol>
+</body>
+</html>

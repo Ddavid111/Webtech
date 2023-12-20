@@ -1,0 +1,140 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    display: inline;
+}
+
+.flagsLabel {
+    text-align: center;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: darkblue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+ }
+
+input[type="radio"]:checked +label {
+    text-align: center;
+    background-color: whitesmoke;
+    color: green;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#endOfForms {
+    text-align: center;
+    justify-content: center;
+}
+
+#endOfForms input {
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.btn:hover {
+    background-color: lightblue;
+    color: navy;
+}
+
+.btn:active {
+    background-color: darkblue;
+    color: white;
+}
+
+.header{
+    padding-top:10px;
+    min-height:70px;
+    border-bottom:red 3px solid;
+    position:sticky;
+    top: 0;
+    overflow: hidden;
+    background-color:#262626;
+}
+
+.header h1{
+    margin: 0;
+    font-family: Tandelle;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px black;
+}
+
+header #nav-bar {
+    padding: 0 50px;
+    border-bottom: red 3px solid;
+}
+
+header #nav-bar a {
+    color: darkblue;
+    font-size:15px;
+    text-decoration:none;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-left: 5px;
+}
+header #nav-bar a:hover {
+    background: #ff0000;
+    color:#fff;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+#menuBar {
+    font-size: 16px;
+    background: black;
+    float: right;
+    width: 59%;
+}
+
+label {
+    display: inline-block;
+}
+label img {
+    width: 30px;
+    height: 20px;
+}
+
+.forms label {
+    display: block;
+}

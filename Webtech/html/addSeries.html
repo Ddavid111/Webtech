@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorozat hozzáadása</title>
+
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/alert-box.css" rel="stylesheet" type="text/css">
+    <script src="../jquery-3.7.1.js" type="text/javascript" ></script>
+    <script src="../js/showHeader.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script src="../js/addSeries.js" type="text/javascript"></script>
+
+    <div id="nav-bar"></div>
+</head>
+
+<body onload="setBackgroundColor()">
+
+<h2 align="center" >Sorozat hozzádása</h2>
+
+<div class="alert-box hide hidden">
+    <p></p>
+    <span class="close-alert">&times; </span>
+</div>
+
+<div class="forms">
+    <form action="/addSeries" method="post" onsubmit="return validateForm();">
+        <div class="formrows">
+            <label>
+                Cím
+                <input type="text" name="title" id="title" />
+            </label>
+
+            <label>
+                Rendező
+                <input type="text" name="director" id="director">
+            </label>
+
+            <label>
+                Főszereplő
+                <input type="text" name="main_actor">
+            </label>
+
+            <label>
+                Évadok száma
+                <input type="number" name="seasons" id="seasons">
+            </label>
+
+            <label>
+                Rövid leírás
+                <textarea name="description"></textarea>
+            </label>
+            Milyen nyelveken érhető el?<p></p>
+            <label class="flagsLabel">
+                <img src="../img/hu.svg" alt="Hungarian" title="Hungarian">
+                <input type="checkbox" value="1" name="lang_hu">
+                <img src="../img/gb.svg" alt="English" title="English">
+                <input type="checkbox" value="1" name="lang_en">
+                <img src="../img/de.svg" alt="Deutsch" title="Deutsch">
+                <input type="checkbox" value="1" name="lang_de">
+                <img src="../img/es.svg" alt="Espanol" title="Espanol">
+                <input type="checkbox" value="1" name="lang_es">
+                <img src="../img/ru.svg" alt="Russian" title="Russian">
+                <input type="checkbox" value="1" name="lang_ru">
+                <img src="../img/ro.svg" alt="Romanian" title="Romanian">
+                <input type="checkbox" value="1" name="lang_ro">
+            </label>
+
+        </div>
+        <p></p>
+        <div id="endOfForms">
+            <input style="background-color: red; border: 1px solid darkred; color: white; padding: 10px 20px;" type="reset" value="Űrlap alaphelyzetbe állítása">
+            <p></p>
+
+            <input type="submit" class="btn" value="Felvitel">
+        </div>
+
+    </form>
+
+
+</div>
+
+
+
+</body>
+</html>
